@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for node-npmtest-twitter-stream-channels/node_modules/twitter-stream-channels/main.js</title>
+    <title>Code coverage report for node-npmtest-twitter-stream-channels/node_modules/twitter-stream-channels/mocks/TwitterStreamChannels.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -190,38 +190,596 @@
     </style>
 </head>
 <body>
-<div class="header high">
+<div class="header low">
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-twitter-stream-channels">npmtest-twitter-stream-channels (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-twitter-stream-channels/node_modules/twitter-stream-channels/main.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-twitter-stream-channels/node_modules/twitter-stream-channels/mocks/TwitterStreamChannels.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">100% <small>(1 / 1)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">34.85% <small>(23 / 66)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">20% <small>(6 / 30)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">20% <small>(3 / 15)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">100% <small>(1 / 1)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">34.85% <small>(23 / 66)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-twitter-stream-channels/node_modules/twitter-stream-channels/</a> &#187; main.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-twitter-stream-channels/node_modules/twitter-stream-channels/mocks/</a> &#187; TwitterStreamChannels.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
 <tr><td class="line-count">1
-2</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">module.exports = require('./lib/TwitterStreamChannels');
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">4</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * @module twitter-stream-channels
+ */
+&nbsp;
+/*
+ * This is a very simple mock of TwitterStreamChannels for offline test purposes
+ * To test only the init of the StreamChannels object (before any call to twitter)
+ */
+&nbsp;
+//in unitTest, we pass a flag --config highSpeed true and then the events will be emitted really faster (not using setTimeout but process.nextTick)
+var highSpeed = process.env.highSpeed ? <span class="branch-0 cbranch-no" title="branch not covered" >true </span>: false;
+&nbsp;
+var StreamChannels = require('../lib/StreamChannels');
+var fs = require('fs');
+var EventEmitter = require('events').EventEmitter,
+        util = require('util');
+&nbsp;
+//optimization for the unit-tests
+var nextLoop = (function(){
+  <span class="missing-if-branch" title="if path not taken" >I</span>if(highSpeed === true){
+<span class="cstat-no" title="statement not covered" >    return process.nextTick;</span>
+  }
+  else{
+    return setTimeout;
+  }
+})();
+&nbsp;
+/*
+ * Mock for the twitter api client twit
+ * No oAuth request will be made
+ * @param {Object} [credentials] @optional (since it's a mock, no credentials needed
+ * @param {Array} [credentials.tweets] @optional (by default will load `/mocks/data/tweets.json`)
+ * @param {Boolean} [credentials.singleRun=true] @optional if false will loop on the tweets mock array until you call stop (default true)
+ * @param {Number} [credentials.tweetDelay=100] @optional delay between each tweets emitted in ms (default 100ms)
+ */
+var TwitMock = function(credentials){
+  //this is internal to the mock to give option to the dev to change the tweet mocks
+  credentials = typeof credentials === 'undefined' ? <span class="branch-0 cbranch-no" title="branch not covered" >{} </span>: credentials;
+  credentials.tweets = typeof credentials.tweets === 'undefined' ? require('./data/tweets.json') : <span class="branch-1 cbranch-no" title="branch not covered" >credentials.tweets;</span>
+  credentials.singleRun = typeof credentials.singleRun === 'undefined' ? true : <span class="branch-1 cbranch-no" title="branch not covered" >credentials.singleRun;</span>
+  credentials.tweetDelay = typeof credentials.tweetDelay === 'undefined' ? 100 : <span class="branch-1 cbranch-no" title="branch not covered" >credentials.tweetDelay;</span>
+  this._tweetsMock = credentials.tweets;
+  this._singleRun = credentials.singleRun;
+  this._tweetDelay = credentials.tweetDelay;
+};
+&nbsp;
+/*
+ * Mocking .stream with an empty function so that no call will be made
+ */
+TwitMock.prototype.stream = <span class="fstat-no" title="function not covered" >function(path, params){</span>
+<span class="cstat-no" title="statement not covered" >  return (new TwitStreamMock({</span>
+    tweets:this._tweetsMock,
+    singleRun: this._singleRun,
+    tweetDelay: this._tweetDelay
+  })).start();
+};
+&nbsp;
+/*
+ * Mock for the OAuth / stream part (no need to mock all the underlying methods, only the events part)
+ * Emits :
+ * - connect
+ * - connected
+ * - tweet : will read the inputTweetsMocks file and emit the tweet found inside
+ * @param {Object} [options] @optional (since it's a mock, no credentials needed
+ * @param {File} [options.tweets] @optional (by default will load `/mocks/data/tweets.json`)
+ * @param {Boolean} [options.singleRun=true] @optional if false will loop on the tweets mock array until you call stop (default true)
+ * @param {Number} [options.tweetDelay=100] @optional delay between each tweets emitted in ms (default 100ms)
+ */
+var TwitStreamMock = <span class="fstat-no" title="function not covered" >function(options){</span>
+  
+<span class="cstat-no" title="statement not covered" >  options = typeof options === 'undefined' ? {} : options;</span>
+<span class="cstat-no" title="statement not covered" >  options.tweets = typeof options.tweets === 'undefined' ? require('./data/tweets.json') : options.tweets;</span>
+<span class="cstat-no" title="statement not covered" >  options.singleRun = typeof options.singleRun === 'undefined' ? true : options.singleRun;</span>
+<span class="cstat-no" title="statement not covered" >  options.tweetDelay = typeof options.tweetDelay === 'undefined' ? 100 : options.tweetDelay;</span>
+  
+<span class="cstat-no" title="statement not covered" >  this.currentTweetIndex = 0;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  EventEmitter.call(this);</span>
+  
+  //following method are directly attached (on the prototype, they would be erased by EventEmitter's prototype)
+<span class="cstat-no" title="statement not covered" >  this.start = <span class="fstat-no" title="function not covered" >function(){</span></span>
+    
+    //don't do anything if already connected
+<span class="cstat-no" title="statement not covered" >    if(this.abortedBy === null){</span>
+<span class="cstat-no" title="statement not covered" >      return this;</span>
+    }
+    
+<span class="cstat-no" title="statement not covered" >    var that = this;</span>
+<span class="cstat-no" title="statement not covered" >    this.abortedBy = null;</span>
+  
+<span class="cstat-no" title="statement not covered" >    var emitTweetCb = <span class="fstat-no" title="function not covered" >function(){</span></span>
+<span class="cstat-no" title="statement not covered" >      var that = this;</span>
+<span class="cstat-no" title="statement not covered" >      nextLoop(<span class="fstat-no" title="function not covered" >function(){</span></span>
+        //only send tweet if the stream hasn't been stopped
+<span class="cstat-no" title="statement not covered" >        if(that.abortedBy === null){</span>
+          //emit the tweet
+<span class="cstat-no" title="statement not covered" >          if(options.tweets[that.currentTweetIndex]){</span>
+<span class="cstat-no" title="statement not covered" >            options.tweets[that.currentTweetIndex].$index = that.currentTweetIndex;</span>
+<span class="cstat-no" title="statement not covered" >            that.emit('tweet',options.tweets[that.currentTweetIndex]);</span>
+<span class="cstat-no" title="statement not covered" >            that.currentTweetIndex++;</span>
+          }
+          //case we are at the end of the tweets
+<span class="cstat-no" title="statement not covered" >          if(that.currentTweetIndex &gt;= options.tweets.length){</span>
+            //in singleRun restart from 0
+<span class="cstat-no" title="statement not covered" >            if(options.singleRun === false){</span>
+<span class="cstat-no" title="statement not covered" >              that.currentTweetIndex = 0;</span>
+            }
+            else{
+<span class="cstat-no" title="statement not covered" >              that._twitterDisconnect();</span>
+<span class="cstat-no" title="statement not covered" >              return false;/</span>/dont recall the callback for the next tick
+            }
+          }
+<span class="cstat-no" title="statement not covered" >          emitTweetCb.call(that);</span>
+        }
+      },1*options.tweetDelay);
+    };
+    
+<span class="cstat-no" title="statement not covered" >    nextLoop(<span class="fstat-no" title="function not covered" >function(){</span></span>
+<span class="cstat-no" title="statement not covered" >      that.emit('connect');</span>
+    },0);
+<span class="cstat-no" title="statement not covered" >    nextLoop(<span class="fstat-no" title="function not covered" >function(){</span></span>
+<span class="cstat-no" title="statement not covered" >      that.emit('connected');</span>
+    },1*options.tweetDelay);
+<span class="cstat-no" title="statement not covered" >    nextLoop(<span class="fstat-no" title="function not covered" >function(){</span></span>
+<span class="cstat-no" title="statement not covered" >      emitTweetCb.call(that);</span>
+    },2*options.tweetDelay);
+    
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+  };
+  
+<span class="cstat-no" title="statement not covered" >  this.stop = <span class="fstat-no" title="function not covered" >function(){</span></span>
+<span class="cstat-no" title="statement not covered" >    this.abortedBy = 'twit-client';</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+  };
+  
+<span class="cstat-no" title="statement not covered" >  this._twitterDisconnect = <span class="fstat-no" title="function not covered" >function(){</span></span>
+<span class="cstat-no" title="statement not covered" >    this.abortedBy = 'twitter';</span>
+<span class="cstat-no" title="statement not covered" >    this.emit('disconnect');</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+  };
+  
+};
+&nbsp;
+util.inherits(TwitStreamMock, EventEmitter);
+&nbsp;
+/**
+ * This class mocks {{#crossLink "TwitterStreamChannels"}}TwitterStreamChannels{{/crossLink}} so that you could work offline, on your own data, without connecting to Twitter.
+ * 
+ * See the examples on [the github repo](https://github.com/topheman/twitter-stream-channels/tree/master/examples)
+ * @class TwitterStreamChannelsMock
+ * @constructor
+ * @param {Object} [options] @optional (since it's a mock, no credentials needed
+ * @param {File} [options.tweets] @optional (by default will load `/mocks/data/tweets.json`)
+ * @param {Boolean} [options.singleRun=true] @optional if false will loop on the tweets mock array until you call stop (default true)
+ * @param {Number} [options.tweetDelay=100] @optional delay between each tweets emitted in ms (default 100ms)
+ * @returns {TwitterStreamChannelsMock}
+ */
+var TwitterStreamChannelsMock = function(credentials){
+  this.apiClient = new TwitMock(credentials);
+};
+&nbsp;
+/**
+ * Returns a mocked version of apiClient, only the .stream() method is mocked (will stream exactly the same tweets as {{#crossLink "TwitterStreamChannelsMock/streamChannels"}}stream.streamChannels(){{/crossLink}})
+ * @method getApiClient
+ * @returns {TwitMock}
+ */
+TwitterStreamChannelsMock.prototype.getApiClient = <span class="fstat-no" title="function not covered" >function(){</span>
+<span class="cstat-no" title="statement not covered" >  return this.apiClient;</span>
+};
+&nbsp;
+/**
+ * Mocks the {{#crossLink "TwitterStreamChannels/streamChannels"}}TwitterStreamChannels.streamChannels(options){{/crossLink}} method of TwitterStreamChannels to return a StreamChannels object
+ * 
+ * Will start to emit the tweets you specified in the tweets attributes in the constructor.
+ * @method streamChannels
+ * @param {Object} options
+ * @param {Object|Array} options.track Pass an object describing your channels. If you don't want to use channels, you can pass directly an array of keywords.
+ * @param {Boolean} [options.enableChannelsEvents=true] If true, will fire the events like 'channels/channelName'
+ * @param {Boolean} [options.enableRootChannelsEvent=true] If true, will fire the event 'channels'
+ * @param {Boolean} [options.enableKeywordsEvents=false] If true, will fire the events 'keywords/keywordName' (disabled by default)
+ * @return {StreamChannels}
+ */
+TwitterStreamChannelsMock.prototype.streamChannels = <span class="fstat-no" title="function not covered" >function(options){</span>
+<span class="cstat-no" title="statement not covered" >  return new StreamChannels(this.apiClient, options);</span>
+};
+&nbsp;
+module.exports = TwitterStreamChannelsMock;
 &nbsp;</pre></td></tr>
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 13:21:34 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 18:07:15 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
