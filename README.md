@@ -1,4 +1,7 @@
-# test coverage for  [twitter-stream-channels (v1.0.0)](http://labs.topheman.com/twitter-stream-channels/)  [![npm package](https://img.shields.io/npm/v/npmtest-twitter-stream-channels.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-twitter-stream-channels) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-twitter-stream-channels.svg)](https://travis-ci.org/npmtest/node-npmtest-twitter-stream-channels)
+# npmtest-twitter-stream-channels
+
+#### basic test coverage for  [twitter-stream-channels (v1.0.0)](http://labs.topheman.com/twitter-stream-channels/)  [![npm package](https://img.shields.io/npm/v/npmtest-twitter-stream-channels.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-twitter-stream-channels) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-twitter-stream-channels.svg)](https://travis-ci.org/npmtest/node-npmtest-twitter-stream-channels)
+
 #### Manage multiple filters on the same Twitter stream
 
 [![NPM](https://nodei.co/npm/twitter-stream-channels.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/twitter-stream-channels)
